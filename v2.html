@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="en">
+<!--
+    Author:  Grace Shotts
+    Class:   Web & Distributed Programming 
+    Project: Mustang Version 2
+    Session: 
+    Description: Mustang Version 2
+-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Mustang v2</title>
+        <link rel="stylesheet" href="css-mustang.css">
+    </head>
+    <body onload="initApplication()">
+
+        <form autocomplete="on" onclick="showLookup()">
+        <div class = autocomplete>
+
+
+        <h1>Mustang Version 2</h1> 
+
+        <form action ="getCityState.php" autocomplete="on">
+            <label for= "nameID">Name: </label>
+            <input type="text" id="nameID" name="nameID"><br><br>
+            <label for= "emailID">Email: </label>
+            <input type="text" id="cityID" name="cityID"><br><br>
+            <label for= "cityID">City: </label>
+            <input type="text" id="stateID" name="stateID"><br><br>
+            <label for= "stateID">State: </label>
+            <input type="text" id="emailID" name="emailID"><br><br>
+            <label for= "zipID">Zip: </label>
+            <input type="text" id="zipID" name="zipID"><br><br>
+        </form>
+
+        <td><button type="button" onclick="previous()">Previous</button></td>
+        <td><button type="button" autofocus onclick="next()">Next</button>
+        </td>
+    <tr>
+        <td><button type="button" onclick="add()">New</button></td>
+        <td><button type="button" onclick="remove()">Delete</button>
+    </td>
+
+        <p id="statusID"></p>
+        <br><br><hr>
+        Data and Test Functions:<br>
+        Index:<p id="indexID"></p>
+        Contacts:<p id="contactsID"></p>
+
+        <script src="mustang-js2.js"></script>
+    </body>
+</html>
+
+
+
